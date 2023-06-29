@@ -388,7 +388,7 @@ def run_projection(
     np.savez(f'{outdir}/projected_w.npz', w=projected_w.unsqueeze(0).cpu().numpy())
 
     # Save geometry
-    max_batch = 10000000
+    max_batch = 1000000
     voxel_resolution = 512
     if shapes:
         # generate shapes
